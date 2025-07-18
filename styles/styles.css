@@ -1,24 +1,46 @@
+:root {
+    --main-blue: darkblue;
+    --text-white: white;
+    --text-dark: #333;
+    --light-grey: #eee;
+    --shadow-grey: gray;
+    --border-black: 1px solid black;
+    --border-transparent-black: 1px solid rgb(0 0 0 / 0.2);
+    --border-top-black: 1px solid #000;
+    --nav-padding: 10px;
+    --link-padding: 20px;
+    --img-width: 150px;
+    --img-height: auto;
+    --aside-width: 20rem;
+    --aside-margin: 1rem;
+    --aside-padding: 1rem;
+    --main-max-width: 840px;
+    --footer-margin-top: 15px;
+    --box-shadow: 0 0 30px var(--shadow-grey);
+    --img-padding: 2px;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--main-blue);
+    padding: var(--nav-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--text-white);
     display: block;
-    padding: 20px;
+    padding: var(--link-padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-blue);
 }
 
 img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    width: var(--img-width);
+    height: var(--img-height);
+    border: var(--border-black);
+    padding: var(--img-padding);
+    box-shadow: var(--box-shadow);
 }
 
 p {
@@ -26,30 +48,30 @@ p {
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--aside-margin);
+    border: var(--border-transparent-black);
+    padding: var(--aside-padding);
+    background-color: var(--light-grey);
+    color: var(--text-dark);
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--img-height);
 }
 
 main img {
-    width: 150px;
-    height: auto;
+    width: var(--img-width);
+    height: var(--img-height);
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: var(--footer-margin-top);
+    border-top: var(--border-top-black);
     text-align: center;
 }
