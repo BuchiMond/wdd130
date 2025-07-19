@@ -73,3 +73,7 @@ h1 {
     float: right;
     width: 125px;
 }
+
+.hero article {
+    background-color: var(--accent2-color)
+}
