@@ -27,7 +27,7 @@ header,
 main,
 footer {
     width: 840px;
-    margin: 0 auth;
+    margin: 0 auto;
 }
 
 h1,
