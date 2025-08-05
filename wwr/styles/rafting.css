@@ -219,6 +219,8 @@ footer nav {
 .contact-details p {
     font-size: 1rem;
     margin-bottom: 6px;
+    margin: 8px;
+    padding: 1px;
 }
 
 .contact-info .map iframe {
